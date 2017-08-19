@@ -1,0 +1,46 @@
+body {
+	font-family: Arial;
+	font-size: 150%;
+
+}
+#topdiv {
+	background: #E8ECED;
+	height: 100px;
+	margin: 50px 150px 100px 150px;
+	padding-top: 15px;
+	padding-left: 200px;
+}
+#centerdiv {
+	background: #E8ECED;
+	height: 250px;
+	margin: 0px 150px;
+	padding-top: 5px;
+}
+#video {
+	background: #EF2533;
+	float: left;
+	height: 150px;
+	width: 550px;
+	margin: 0px 50px;
+	padding-left: 20px;
+}
+#playlist {
+	background: #25F09E;
+	float: right;
+	height: 150px;
+	width: 400px;
+	margin: 0px 50px;
+	padding-left: 20px;
+}
+#bottomdiv {
+	background: #E8ECED;
+	height: 100px;
+	margin: 70px 150px;
+	padding-top: 15px;
+	padding-left: 120px;
+}
+#frame {
+	width: 1500px;
+	height: 600px;
+	margin: 0px auto;
+}

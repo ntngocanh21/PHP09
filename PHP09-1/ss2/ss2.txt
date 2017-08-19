@@ -1,0 +1,7 @@
+inline <p style = "color:red">Hello</p>
+internal <head>
+		<style>
+			h1{color:blue;}
+		</style>
+	 </head> 
+external

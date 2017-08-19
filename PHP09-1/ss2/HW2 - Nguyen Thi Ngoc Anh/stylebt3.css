@@ -1,0 +1,37 @@
+
+html {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	font-size: 200%;
+	height: 100%;
+}
+#Tweets {
+	background-color: #A0DDCE;
+	width: 25%;
+	float: left;
+	height: 100%;
+}
+#Replies {
+	background-color: #F7CF2F;
+	width: 25%;
+	float: left;
+	height: 100%;
+}
+#Search {
+	background-color: #6A7A8A;
+	width: 25%;
+	float: left;
+	height: 100%;
+}
+#Messages {
+	background-color: #52ABE5;
+	width: 25%;
+	float: left;
+	height: 100%;
+}

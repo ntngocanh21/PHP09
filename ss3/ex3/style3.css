@@ -1,4 +1,8 @@
-body {
+html {
+	background-color: #ffe4cc;
+}
+#content {
+	background-color: white;
 	width: 1000px;
 	margin: 20px auto;
 	border: 1px solid black;

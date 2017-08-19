@@ -1,0 +1,62 @@
+body {
+	width: 1000px;
+	margin: 20px auto;
+	border: 1px solid black;
+	font-size: 120%;
+}
+img {
+	float: left;
+}
+header {
+	border-bottom: 2px solid orange;
+	margin: 30px;
+}
+header h1 {
+	padding-left: 120px;
+	color: orange;
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 3px black;
+}
+header p {
+	padding-left: 120px;
+	color: green;
+	font-size: 120%;
+	margin-top: 0px;
+	font-weight: bold;
+}
+#left {
+	width: 580px;
+	float: left;
+	border-right: 2px solid orange;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#left h2 {
+	margin: 10px;
+}
+#left img {
+	margin-right: 30px;
+	margin-bottom: 30px;
+	width: 300px;
+}
+#right {
+	float: right;
+	padding-right: 20px;
+}
+footer {
+	margin: 20px;
+	border-top: 2px solid orange;
+	clear: both;
+	padding-left: 650px;
+	font-size: 75%;
+}
+.green {
+	color: green;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.orange {
+	color: orange;
+	font-weight: bold;
+	text-decoration: underline;
+}

@@ -16,22 +16,26 @@ body {
 	width: 25%;
 	float: left;
 	height: 100%;
+	border-radius: 40px 80px;
 }
 #Replies {
 	background-color: #F7CF2F;
 	width: 25%;
 	float: left;
 	height: 100%;
+	border-radius: 40px 80px 20px 50px;
 }
 #Search {
 	background-color: #6A7A8A;
 	width: 25%;
 	float: left;
 	height: 100%;
+	border-radius: 10%;
 }
 #Messages {
 	background-color: #52ABE5;
 	width: 25%;
 	float: left;
 	height: 100%;
+	border-radius: 50%;
 }

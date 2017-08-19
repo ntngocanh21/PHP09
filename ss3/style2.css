@@ -1,0 +1,22 @@
+body {
+	width: 600px;
+	border: 2px solid black;
+	margin: 100px auto;
+	box-shadow: 4px 4px 10px;
+}
+#decr {
+	width: 300px;
+	float: left;
+	padding: 10px;
+}
+
+#frame {
+	width: 200px;
+	border: 2px solid black;
+	float: left;
+	margin: 20px;
+	padding: 10px;
+}
+#footer {
+	padding: 10px;
+}

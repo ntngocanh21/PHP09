@@ -1,0 +1,54 @@
+
+ul li.home {
+	list-style-image: url(home.png);
+}
+ul li.news {
+	list-style-image: url(news.png);
+}
+ul li.music {
+	list-style-image: url(music.png);
+}
+ul li.football {
+	list-style-type: circle;
+}
+ul li.volleyball {
+	list-style-type: square;
+}
+ul li.tennis {
+	list-style-type: disc;
+}
+ul li.contact {
+	list-style-type: none;
+}
+li {
+	margin: 20px;
+	float: left;
+}
+ul {
+	width: 100px;
+	height: 50px;
+}
+ol li {
+	list-style-type: upper-roman;
+}
+a{
+	text-decoration: none;
+}
+a:hover { 
+    color: yellow;
+}
+
+div{
+	height: 2000px;
+}
+#nav_bar li{
+	border-right: 1px solid black;
+}
+#nav_bar {
+	height: 50px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+
+

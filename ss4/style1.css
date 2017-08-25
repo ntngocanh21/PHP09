@@ -1,0 +1,73 @@
+
+#nav_bar1 li{
+	border-right: 2px solid black;
+}
+#nav_bar1 ul li{
+	margin: 10px;
+	float: left;
+	padding-right: 20px;
+}
+#nav_bar1 ul {
+	width: 800px;
+	height: 38px;
+	list-style-type: none;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+li.aboutus a{
+	text-decoration: none;
+}
+
+
+#nav_bar2 #ul {
+	width: 800px;
+	height: 38px;
+	list-style-type: none;
+	background-color: blue;
+	position: relative;
+}
+#nav_bar2 .li,.member {
+	border-right: 2px solid white;
+	height: 30px;
+    margin: -1px 0px;
+	float: left;
+	padding:10px 20px;
+}
+#nav_bar2 a:link {
+	text-decoration: none;
+}
+#nav_bar2 a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#nav_bar2 ul li.member ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_bar2 ul li.member:hover >ul{
+	display: block;
+}
+#nav_bar2 .member ul li{
+	margin: 10px;
+	list-style-type: none;
+	text-align: center;
+	background-color: blue;
+	margin: 3px;
+	padding: 12px 2px 12px 15px;
+	width: 144px;	
+	color: white;
+	float: none;
+}
+#nav_bar2 .member ul{
+	padding: 0px;
+	clear: both;
+}
+
+#nav_bar2 > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+
+}

@@ -2,6 +2,9 @@
 	padding: 0px;
 	margin: 0px;
 }
+body{
+	font-family: 'Open Sans', sans-serif;
+}
 .frame {
 	width: 1518px;
 	margin: 0px auto;
@@ -9,7 +12,6 @@
 #banner {
 	background-color: #FFC600;
 	height: 94px;
-	font-family: Arial;
 	font-weight: bold;
 	font-size: 90%;
 }
@@ -35,9 +37,8 @@
 }
 #nav_bar li{
 	float: left;
-	padding: 13px 5px;
-	font-size: 90%;
-	font-weight: bold;
+	padding: 13px 9px;
+	font-size: 85%;
 }
 #nav_bar ul li a{
 	text-decoration: none;
@@ -59,7 +60,7 @@
 
 #nav_bar ul li:hover .dropdown{
 	margin-top: 13px;
-	margin-left: -5px;
+	margin-left: -10px;
 	display: block;
 	background-color: #231F20;
 	position: absolute;
@@ -84,29 +85,119 @@
 	padding: 10px;
 	border-left: 4px solid #AE1A1F;
 	color: #AE1A1F;
-	font-weight: bold;
 	font-size: 120%;
 }
 #title a{
 	float: right;
 	padding: 8px;
 	background-color: #d9534f;
-	margin-top: -7px;
+	margin-top: -5px;
 	text-decoration: none;
 	color: white;
 	font-size: 80%;
 }
 #image3{
 	padding:15px 0px 15px 200px;
+	height: 400px;
 }
 .image{
 	margin-right: 10px;
 	width: 375px;
 	float: left;
 }
-.image img{
+.image p.ndimg3{
+	font-size: 90%;
+	padding-top: 10px;
+}
+.image p.calendar{
+	font-size: 80%;
+}
+.image .img3 img{
 	width: 372px;
 	min-height: 221px;
 	margin: 7px 0px;
 }
+.image4{
+	margin-left: 200px;
+	margin-top: 10px;
+	height: 600px;
+	width: 1200px;
+}
+.image4 div{
+	width: 270px;
+	float: left;
+	margin-right: 20px;
+	text-align: center;
+} 
+.image4 div img{
+	width: 270px;
+} 
+.image4 div .hocky{
+	height: 40px;
+	color: #AE1A1F;
+	font-size: 20px;
+	margin-top: 15px;
+}
+.image4 div .ngonngu{
+	font-weight: bold;
+	font-size: 90%;
+	margin-bottom: 
+}
+.image4 div .noidung{
+	font-size: 90%;
+	height: 95px;
+	text-align: justify;
+}
+.image4 div a{
+	text-decoration: none;
+	background-color: #d9534f;
+	color: white;
+	font-size: 80%;
+	font-weight: bold;
+	padding: 10px 15px;
+
+}
+.image4 div a:hover{
+	background-color: #C9302C;
+}
+.image4 #image4title1 {
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 220px;
+	height: 35px;
+}
+.image4 #image4title2 {
+	padding-left: 370px;
+	font-size: 20px;
+}
+
+.image4 div img.loiich{
+	width: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+} 
+.image4 div img.loiich1{
+	width: auto;
+	margin-top: 55px;
+	margin-bottom: 53px;
+} 
+.image4 div .nd1{
+	font-weight: bold;
+	font-size: 95%;
+	margin:5px;
+}
+.image4 div.imageblock {
+	height: 200px;
+}
+.image4 div .nd2{
+	font-weight: bold;
+	font-size: 120%;
+	margin:5px;
+	color: #AE1A1F;
+}
+.image4 div .nd3{
+	font-size: 95%;
+}
+
+
 

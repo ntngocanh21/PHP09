@@ -1,0 +1,112 @@
+#header {
+	background-color: #9ec4f9;
+	width: 100%;
+	height: 85px;
+}
+#header p{
+	clear: both;
+}
+#header div{
+	background-color: #cee2fb;
+	height: 40px;
+	float: left;
+	margin: 0% 0.3%;
+}
+div.H1_1{
+	width: 20%;
+}
+div.H1_2{
+	width: 49%;
+}
+div.H1_3{
+	width: 29%;
+}
+#hero{
+	margin-top: 10px;
+	margin-right: 0.9%;
+	background-color: #9ec4f9;
+	width: 70%;
+	height: 110px;
+	float: left;
+}
+#ad {
+	margin-top: 10px;
+	background-color: #6fa6dc;
+	width: 29%;
+	height: 110px;
+	float: left;
+}
+#hero div{
+	background-color: #cee2fb;
+	height: 50px;
+	float: left;
+	margin: 0% 0.4%;
+}
+div.H2_1{
+	width: 69%;
+}
+div.H2_2{
+	width: 29%;
+}
+#body{
+	margin-top: 10px;
+	margin-right: 0.9%;
+	background-color: #9ec4f9;
+	width: 70%;
+	height: 300px;
+	float: left;
+}
+#slidebar {
+	margin-top: 10px;
+	background-color: #9ec4f9;
+	width: 29%;
+	height: 300px;
+	float: left;
+}
+#footer {
+	background-color: #9ec4f9;
+	width: 100%;
+	height: 45px;
+	float: left;
+	margin-top: 10px;
+}
+div.S5_1{
+	width: 97%;
+	background-color: #cee2fb;
+	margin-left: 1.2%;
+	height: 245px;
+}
+@media screen and (max-width: 960px){
+	#hero{
+		width: 100%;
+		height: 160px;
+	}
+	div.H2_1{
+		width: 99%;
+	}
+	div.H2_2{
+		width: 99%;
+	}
+	#hero div{
+		margin: 0.2% 0.5%;
+	}
+}
+
+
+@media screen and (min-width: 320px){
+	#header{
+		height: 135px;
+	}
+	div.H1_1{
+		width: 99%;
+	}
+	div.H1_2{
+		width: 58%;
+	}
+	div.H1_3{
+		width: 40%;
+	}
+	#header div{
+	margin: 0.3% 0.5%;
+}
+}

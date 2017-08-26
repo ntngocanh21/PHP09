@@ -29,45 +29,46 @@ li.aboutus a{
 #nav_bar2 .li,.member {
 	border-right: 2px solid white;
 	height: 30px;
-    margin: -1px 0px;
+    margin: 0px;
 	float: left;
-	padding:10px 20px;
+	padding: 4px;
 }
 #nav_bar2 a:link {
 	text-decoration: none;
+}
+#nav_bar2 a{
+	padding-top: 10px;
 }
 #nav_bar2 a:visited {
 	text-decoration: none;
 	color: white;
 }
 
-#nav_bar2 ul li.member ul{
-	display: none;
+#nav_bar2 ul li ul{
 	position: absolute;
 	top: 100%;
 }
-#nav_bar2 ul li.member:hover >ul{
-	display: block;
-}
-#nav_bar2 .member ul li{
-	margin: 10px;
+
+#nav_bar2 ul li{
 	list-style-type: none;
 	text-align: center;
 	background-color: blue;
 	margin: 3px;
-	padding: 12px 2px 12px 15px;
+	padding: 12px 9px 12px 0px;
 	width: 144px;	
 	color: white;
-	float: none;
-}
-#nav_bar2 .member ul{
-	padding: 0px;
-	clear: both;
 }
 
-#nav_bar2 > ul::after{
-	content: "";
+#nav_bar2 ul li > .dropdown{
+	display: none;
+}
+#nav_bar2 ul li:hover .dropdown{
 	display: block;
-	clear: both;
-
+	position: absolute;
+}
+#nav_bar2 ul li:hover .dropdown li{
+	float: none;
+	color: white;
+	border-right: none;
+	margin-left: -45px;
 }

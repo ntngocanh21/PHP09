@@ -27,22 +27,56 @@
 }
 #nav_bar {
 	background-color: #AE1A1F;
-	height: 42px;
-	padding-left: 205px ;
+	height: 42.5px;
+	padding-left: 200px ;
 }
 #nav_bar ul {
-	width: 1500px;
 	list-style-type: none;
 }
-#nav_bar ul li{
+#nav_bar li{
 	float: left;
-	padding: 12px 5px 10px 5px;
+	padding: 13px 5px;
 	font-size: 90%;
 	font-weight: bold;
 }
 #nav_bar ul li a{
 	text-decoration: none;
 	color: yellow;
+	display: block;
+}
+#nav_bar ul li > .dropdown{
+	display: none;
+}
+#nav_bar ul li:hover{
+	background-color: yellow;
+}
+#nav_bar ul li:hover a{
+	color: black;
+}
+#nav_bar ul li:hover ul.dropdown li a{
+	color: yellow;
+}
+
+#nav_bar ul li:hover .dropdown{
+	margin-top: 13px;
+	margin-left: -5px;
+	display: block;
+	background-color: #231F20;
+	position: absolute;
+}
+#nav_bar ul li:hover .dropdown li{
+	float: none;
+	border-right: none;
+	padding: 8px 18px;
+}
+#nav_bar ul li:hover .dropdown li:hover{
+	background-color:yellow;
+}
+#nav_bar ul li:hover .dropdown li:hover a{
+	color: #231F20;
+}
+#nav_bar li.current{
+	background-color: #231F20;
 }
 #title {
 	background-color: #F1F1F1;
@@ -75,3 +109,4 @@
 	min-height: 221px;
 	margin: 7px 0px;
 }
+

@@ -1,0 +1,27 @@
+form {
+	border:1px solid black;
+	box-shadow: 5px 5px 15px;
+	padding: 5px 20px;
+	width: 430px;
+	height: 490px;
+	background-color: #F5F5F5;
+}
+
+#input input {
+	padding: 2px 30px;
+}
+#reset {
+	width: 114px;
+	height: 24px;
+}
+#btnimg {
+	width: 125px;
+	height: 25px;
+}
+div input {
+	float: left;
+	margin-left: 15px;
+}
+input {
+	margin-bottom:4px;
+}

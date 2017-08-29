@@ -1,0 +1,26 @@
+img {
+	float: left;
+	width: 19.5%;
+	margin-right: 0.5%;
+}
+@media screen and (max-width: 960px){
+	img{
+		width: 24%;
+		margin-bottom: 0.5%;
+	}
+}
+@media screen and (max-width: 760px){
+	img{
+		width: 29%;
+	}
+}
+@media screen and (max-width: 560px){
+	img{
+		width: 49%;
+	}
+}
+@media screen and (max-width: 460px){
+	img{
+		width: 99%;
+	}
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+	<form name="email" action="" method="post">
+		<p>Please enter your email address to subscribe to our newsletter</p>
+		<p>Username :<input type="text" name="email" required=""></p>
+		<p>Password : <input type="password" name="password" maxlength="6" placeholder="enter your password" pattern="[a-zA-Z0-9]{6,}" title="Must be 6+ alphanumeric"></p>
+		<p>ID: <input type="hidden" name="id"></p>
+		Gender : <input type="radio" name="gender" value="male">Male
+		<input type="radio" name="gender" value="female">Female<br>
+		Social : <br>
+		<input type="checkbox" name="top1" value="facebook" checked>Facebook<br>
+		<input type="checkbox" name="top2" value="instagram">Instagram<br>
+		<input type="checkbox" name="top3" value="tweeter">Tweeter<br>
+		Country : <select>
+			<option value="VietNam">VietNam</option>
+			<option value="Thailand">Thailand</option>
+			<option value="Japan">Japan</option>
+		</select> <br>
+		Avatar : <input type="file" name="ava"><br>
+		Comments : 
+		<textarea rows="5" cols="57" placeholder="Please enter your comments"></textarea>
+		<div id="btn">
+			<p id="input"><input type="submit" name="submit" value="Subscribe"></p>
+			<p><input id="reset" type="reset" name="reset" value="Reset"></p>
+			<p ><input id="btnimg" type="image" name="buy" src="button.jpg"></p>
+		</div>
+	</form>
+</body>
+</html>

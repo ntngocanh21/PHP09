@@ -4,6 +4,10 @@
 	height: 100px;
 	padding-top: 1px;
 }
+div{
+	left: 50%; 
+    top: 50%;
+}
 p{
 	font-weight: bold;
 }

@@ -1,0 +1,65 @@
+body{
+	margin: 0px;
+}
+.frame{
+	width: 1400px;
+	margin: 0px auto;
+}
+#ava {
+	border-radius:50%;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin-left: 200px;
+	margin-top: 38px;
+	background-color: #b5b2b2;
+}
+#ava input{
+	color: white;
+	margin-top: 350px;
+	font-size: 20px;
+}
+#profile {
+	padding-top: 70px;
+	text-align: center;
+	font-size: 150%;
+	color: white;
+}
+header{
+	background-color: #808080;
+}
+section {
+	margin-left: 100px;
+}
+section img {
+	float: left;
+	margin: 20px;
+}
+section h1 {
+	padding-top:28px;
+	font-size: 180%;
+}
+.info {
+	padding-left: 90px;
+	padding-right: 160px;
+}
+.info textarea{
+	font-size: 25px;
+}
+input#name{
+	background-color: #808080;
+	color: white;
+	font-size: 50px;
+}
+input{
+	background-color: #808080;
+	color: white;
+	font-size: 30px;
+}
+#btn{
+	margin-left: 580px;
+}
+#btn p{
+	padding-right: 200px;
+	float: left;
+}

@@ -4,6 +4,11 @@
 }
 body{
 	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+nav{
+	position: fixed;
+	top:0;
 }
 .frame {
 	width: 1518px;

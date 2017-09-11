@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="number" id="number">
+	<button onclick="check()">CHECK</button>
+	<p id="result"></p>
+	<script>
+		
+		function check() {
+			num = document.getElementById("number").value;
+			if ((num % 3) == 0) {
+			document.getElementById("result").innerHTML = "BA";
+			}
+			if ((num % 5) == 0) {
+			document.getElementById("result").innerHTML = "NAM";
+			}
+			if ((num % 15) == 0) {
+			document.getElementById("result").innerHTML = "MUOI LAM";
+			}
+		}
+		
+	</script>
+</body>
+</html>

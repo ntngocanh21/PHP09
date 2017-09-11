@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="name"></p>
+	<p id="count"></p>
+	<p id="search"></p>
+	<button onclick="replace()">REPLACE</button>
+	<button onclick="toUpperCase()">UPPERCASE</button>
+	<button onclick="toLowerCase()">LOWERCASE</button>
+	<button onclick="search()">SEARCH</button>
+	<button onclick="cutSurname()">CUT SURNAME</button>
+	<script>
+		var name = "NGUYEN THI NGOC ANH";
+		document.getElementById("name").innerHTML = name;
+		document.getElementById("count").innerHTML = name.length;
+
+		function replace() {
+     		var txt = name.replace("THI","PHP09");
+    		document.getElementById("name").innerHTML = txt;
+		}
+		function toUpperCase() {
+    		document.getElementById("name").innerHTML = name.toUpperCase();
+		}
+		function toLowerCase() {
+    		document.getElementById("name").innerHTML = name.toLowerCase();
+		}
+		function search() {
+			var pos = name.search("n");
+			document.getElementById("search").innerHTML = pos;
+		}
+		function cutSurname() {
+			var res = name.substr(7,18);
+			document.getElementById("name").innerHTML = res;
+		}
+	</script>
+</body>
+</html>

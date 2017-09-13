@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book Room</title>
+</head>
+<body>
+	<form action="">
+		<div id="room">
+			<p>Room</p>
+			<select name="chooseRoom" id="chooseRoom">
+				<option value="1">001</option>
+				<option value="2">002</option>
+				<option value="3">003</option>
+				<option value="4">004</option>
+				<option value="5">005</option>
+			</select>
+			<p>Email: </p>
+			<input type="txtEmail" id="txtEmail" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
+		</div>
+		<div id="people">
+			<p>Adults</p>
+			<input type="text" name="adults" id="adults">
+			<p>Children</p>
+			<input type="text" name="children" id="children">
+		</div>
+		<div>
+			<p>Arrival Date</p>
+			<input type="date" name="arrivalDate" id="arrivalDate">
+			<p>Departure Date</p>
+			<input type="date" name="departureDate" id="departureDate">
+		</div>
+		<p>Gender</p>
+			<select name="chooseGender" id="chooseGender">
+				<option value="1">Mr</option>
+				<option value="2">Ms</option>
+			</select><br>
+		<input type="button" id="booking" onclick="solve()" value="Booking">
+		<img src="img.png" width="50px" height="50px" id="img">
+	</form>
+	<script type="text/javascript"  src="bookScript.js"></script>
+</body>
+</html>

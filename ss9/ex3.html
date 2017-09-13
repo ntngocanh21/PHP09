@@ -6,22 +6,21 @@
 <body>
 	<input type="text" name="number" id="number">
 	<button onclick="check()">CHECK</button>
-	<p id="result"></p>
 	<script>
-		
 		function check() {
-			num = document.getElementById("number").value;
-			if ((num % 3) == 0) {
-			document.getElementById("result").innerHTML = "BA";
-			}
-			if ((num % 5) == 0) {
-			document.getElementById("result").innerHTML = "NAM";
-			}
-			if ((num % 15) == 0) {
-			document.getElementById("result").innerHTML = "MUOI LAM";
+			var x=document.getElementById("number").value;
+		 	for (var i = 0; i <=x; i++) {
+		 		if(i%3==0){
+					document.write("BA <br>");
+				}
+				if(i%5==0){
+					document.write("NAM <br>");
+				}
+		 	  	if (i%15==0) {
+				  	 document.write("MUOI LAM <br>");
+				}
 			}
 		}
-		
 	</script>
 </body>
 </html>

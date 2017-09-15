@@ -9,14 +9,19 @@
 	</p>
 	<input type="text" name="text" id="text">
 	<input type="button" name="button" value="OK" onclick="checkText()">
-	<script type="text/javascript">
-		function checkText() {
-			var str = document.getElementById('paragraph').innerHTML;
-   			var text = document.getElementById('text').value;
-   			var textChange = text.fontcolor("yellow");
-  			document.getElementById('paragraph').innerHTML= str.replace(new RegExp(text,'g'),textChange);
+	<input type="button" name="btnReset" value="Reset" onclick="ResetText()">
 
-		}
+	<script type="text/javascript">
+		var str = document.getElementById('paragraph').innerHTML;
+		function checkText() {
+   			var text = document.getElementById('text').value;
+   			var textChange = "<span style=\"background-color:yellow\">"+text+"</span>";
+  			document.getElementById('paragraph').innerHTML= str.replace(new RegExp(text,'g'),textChange);
+  		}
+		function ResetText() {
+  			document.getElementById('paragraph').innerHTML= str;
+  			document.getElementById('text').value= null;
+		}		
 	</script>
 </body>
 </html> 

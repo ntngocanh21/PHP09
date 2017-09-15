@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+html{
+	background-color: #edf0f5;
+}
+#header #header_left{
+	width: 50%;
+	float: left;
+}
+#header #header_right{
+	width: 40%;
+	float: right;
+}
+.frame{
+	width: 960px;
+	margin: 0px auto;
+}
+#header{
+	background-color: #3f5c9a;
+	color: white;
+	height: 40%;
+}
+
+#left{
+	float: left;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 7% 0px;
+}
+#right{
+	float: right;
+	width: 45%;
+}
+#l1{
+	font-size: 130%;
+	font-weight: bold;
+}
+#l2{
+	font-size: 110%;
+}
+#r1{
+	margin: 5% 0 1% 0;
+	font-size: 220%;
+	font-weight: bold;
+}
+#r2{
+	font-size: 110%;
+	margin-bottom: 4%;
+}
+#firstname,#lastname,#regEmail,#regPass{
+	height: 35px;
+	font-size: 110%;
+	padding-left: 10px;	
+	margin-bottom: 2.5%;
+	border-radius: 5px;
+	border: 1px solid #bdc7d8;
+}
+#firstname,#lastname {
+	width: 40%;
+	margin-right: 1.5%;
+}
+#regEmail,#regPass{
+	width: 86%;
+}
+#r3{
+	font-size: 120%;
+	margin: 10px 0px 8px 0px;
+}
+#day,#month,#year{
+	height: 30px;
+	margin-right: -4px;
+}
+#day{
+	width: 57px;
+}
+#month{
+	width: 71px;
+}
+#year{
+	width: 63px;
+}
+#birthday-help{
+	text-decoration: none;
+	color: #365899;
+	font-size: 70%;
+	padding-left: 10px;
+}
+#female,#male{
+	margin: 20px 0px 20px 15px;
+}
+#right label{
+	font-size: 120%;
+	margin-left: 5px;
+}
+#r4{
+	font-size: 70%;
+	width: 75%;
+}
+#btnSubmit{
+	background-color: #69a74e;
+	border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    width: 190px;
+    height: 40px;
+    margin: 20px 0px;
+    font-size: 125%;
+}
+#r5{
+	font-size: 85%;
+	font-weight: bold;
+	border-top: 1px solid #dddfe2;
+	padding-top: 20px;
+}
+#r5 a{
+	text-decoration: none;
+	color: #365899;
+
+}
+#result{
+	color: red;
+}
+
+
+
+

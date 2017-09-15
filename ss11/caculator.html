@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="result"></p>
+	<button id="7" value="7" onclick="checkbtn('7')">7</button>
+	<button id="8" value="8" onclick="checkbtn('8')">8</button>
+	<button id="9" value="9" onclick="checkbtn('9')">9</button>
+	<button id="add" value="+" onclick="checkbtn('add')">+</button><br>
+	<button id="4" value="4" onclick="checkbtn('4')">4</button>
+	<button id="5" value="5" onclick="checkbtn('5')">5</button>
+	<button id="6" value="6" onclick="checkbtn('6')">6</button>
+	<button id="sub" value="-" onclick="checkbtn('sub')">-</button><br>
+	<button id="1" value="1" onclick="checkbtn('1')">1</button>
+	<button id="2" value="2" onclick="checkbtn('2')">2</button>
+	<button id="3" value="3" onclick="checkbtn('3')">3</button>
+	<button id="mul" value="*" onclick="checkbtn('mul')">*</button><br>
+	<button id="0" value="0" onclick="checkbtn('0')">0</button>
+	<button id="dot" value="." onclick="checkbtn('dot')">.</button>
+	<button onclick="result()" >=</button>
+	<button id="div" value="/" onclick="checkbtn('div')">/</button><br>
+	<button id="delAll" onclick="delAll()">C</button>
+	<button id="del" onclick="del()">CE</button>
+	<style type="text/css">
+		p{	
+			padding: 10px;
+			margin: 4px 2px; 
+			font-size: 20px;
+			border: 2px solid silver;
+			width: 200px;
+			height: 22px;
+		}
+		button{
+			margin: 4px 2px;
+			width: 50px;
+			height: 50px;
+		}
+		#delAll,#del{
+			width: 108px;
+		}
+	</style>
+	<script type="text/javascript">
+		var str="";
+		function checkbtn(id) {
+			str = str + document.getElementById(id).value;
+			document.getElementById("result").innerHTML= str;
+		}
+		function result(){
+			document.getElementById("result").innerHTML= eval(str);
+		}
+		function delAll(){
+			document.getElementById("result").innerHTML= " ";
+		}
+		function del(){
+			str = str.slice(0,str.length-1);
+			document.getElementById("result").innerHTML= str;
+		}
+	</script>
+</body>
+</html>

@@ -30,14 +30,24 @@
 			<p>Departure Date</p>
 			<input type="date" name="departureDate" id="departureDate">
 		</div>
-		<p>Gender</p>
-			<select name="chooseGender" id="chooseGender">
-				<option value="1">Mr</option>
-				<option value="2">Ms</option>
-			</select><br>
+		<br>
+
+		<select name="chooseGender" id="chooseGender">
+				<option value="mr">Mr</option>
+				<option value="ms">Ms</option>
+		</select>
+		<p><input type="color" name="color" id = "color"></p>
+
+
 		<input type="button" id="booking" onclick="solve()" value="Booking">
-		<img src="img.png" width="50px" height="50px" id="img">
 	</form>
+	<img src="no-image.png" alt="Image" id ="imageGender" style="border:3px solid gray;">
+
+	<p onmouseover="getInfo('ronaldo.jpg',100)">Ronaldo</p>
+	<p onmouseover="getInfo('messi.jpg',150)">Messi</p>
+	<p onmouseover="getInfo('bale.jpg',200)">Bale</p>
+	<p onmouseover="getInfo('kroos.png',250)">Kroos</p>
+	<img src="no-image.png" alt="Image" id ="imageChange">
 	<script type="text/javascript"  src="bookScript.js"></script>
 </body>
 </html>

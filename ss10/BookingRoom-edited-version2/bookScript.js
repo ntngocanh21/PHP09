@@ -42,20 +42,27 @@ function checkDay()
 	if( departureDate < arrivalDate )
 		alert("The departure date must be greater than or equal to the arrival date");
 }
-function checkGender{
-	var gender = document.getElementByID('chooseGender').value;
-	if ( gender = 1 ) {
-		document.getElementByID('img').src = "men.png";
+function changeImage(){
+	var gender = document.getElementById("chooseGender").value;
+	var color = document.getElementById("color").value;
+	document.getElementById("imageGender").style.border = "3px solid"+color;
+	if(gender == "mr"){
+		document.getElementById("imageGender").src = "boy.jpg";
+	}else{
+		document.getElementById("imageGender").src = "girl.jpg";
 	}
-	else{
-		document.getElementByID('img').src = "women.png";
-	}
+}
+function getInfo(name, width){
+	document.getElementById("imageChange").src = name;
+	document.getElementById("imageChange").style.width = width + "px";
 }
 function solve()
 {
+	changeImage();
 	checkEmail();
 	checkNumber();
 	checkDay();
+
 
 }
 

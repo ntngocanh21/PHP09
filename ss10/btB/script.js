@@ -23,7 +23,8 @@ function checkEmail() {
 	else{
 		document.getElementById('result').innerHTML = null;
 	}
- }
+}
+
 // function checkPass(){
 //     var regpass = document.getElementById('regPass').value;
 //     var reRegPass = document.getElementById("re_regPass").value;
@@ -41,6 +42,7 @@ function checkEmail() {
 // 			document.getElementById("result").innerHTML=null;
 // 			return true;
 // 		}
+// 	}
 // }
 function dayOptionCreate() {
  	select = document.getElementById("day");
@@ -66,6 +68,8 @@ function yearOptionCreate() {
 	checkField('regEmail');
 	checkField('regPass');
 	checkField('re_regPass');
+	checkEmail();
+	//checkPass();
 }
 
 

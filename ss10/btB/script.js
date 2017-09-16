@@ -46,7 +46,7 @@ function checkEmail() {
 // }
 function dayOptionCreate() {
  	select = document.getElementById("day");
-  	for (var i = 0; i<=31; i++){
+  	for (var i = 2; i<=31; i++){
         var opt = document.createElement("option");
         opt.value = opt.text = i;
         select.add(opt);
@@ -54,7 +54,16 @@ function dayOptionCreate() {
 }
 function yearOptionCreate() {
  	select = document.getElementById("year");
-  	for (var i = 1970; i<=2017; i++){
+  	for (var i = 1970; i<1999; i++){
+        var opt = document.createElement("option");
+        opt.value = opt.text = i;
+        select.add(opt);
+    }
+    var opt = document.createElement("option");
+        opt.value = opt.text = 1999;
+        opt.selected = "1";
+        select.add(opt);
+    for (var i = 2000; i<=2017; i++){
         var opt = document.createElement("option");
         opt.value = opt.text = i;
         select.add(opt);

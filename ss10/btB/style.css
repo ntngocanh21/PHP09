@@ -97,7 +97,6 @@ html{
 }
 #r2{
 	font-size: 110%;
-	margin-bottom: 4%;
 }
 #firstname,#lastname,#regEmail,#regPass,#re_regPass{
 	height: 35px;
@@ -172,6 +171,7 @@ html{
 }
 #result{
 	color: red;
+	padding: 10px 15px;
 }
 
 

@@ -16,7 +16,7 @@ function checkEmail() {
     var email = document.getElementById('regEmail');
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if (!filter.test(email.value)) {
-	    document.getElementById('result').innerHTML = "please enter a valid email adress"
+	    document.getElementById('result').innerHTML = "Please enter a valid email adress"
 	    email.focus;
 	    return false;
 	}
@@ -61,7 +61,11 @@ function yearOptionCreate() {
 
  function solve() {
 	checkEmail();
-	// checkPass();
+	checkField('firstname');
+	checkField('lastname');
+	checkField('regEmail');
+	checkField('regPass');
+	checkField('re_regPass');
 }
 
 

@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset=utf-8>
-	<meta name=description content="">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<title>HW1</title>
+	<title></title>
 </head>
 <body>
-	Content:
-	<p id="content">a A aa AA aA aaa AAA aAa AaA aaA</p>
-	<input  id="input" type="text" name="" onchange="change()">
-	<p id="contentx"></p>
-	</div>
-	<script  type="text/javascript" charset="utf-8" async defer>
-		function change(){
-			var str=document.getElementById("content").innerHTML;
-			var str1=str.toLowerCase();
+	<p id="paragraph">a A aaa AAA aAa AaA</p>
+	<input type="text" name="text" id="text">
+	<input type="button" name="button" value="OK" onclick="checkText()">
+	<input type="button" name="btnReset" value="Reset" onclick="ResetText()">
 
-			console.log(str1);
-			console.log(str1.length);
-			
-			var str2=document.getElementById("input").value;
-			console.log(str2);
 
-			var str2T=str2.toLowerCase();
-
-			var nstr="";
+	<script type="text/javascript">
+		var strF = document.getElementById('paragraph').innerHTML;
+		function checkText() {
+			var str = document.getElementById('paragraph').innerHTML;
+   			var strL=str.toLowerCase();
+   			var text = document.getElementById('text').value;
+   			var textL=text.toLowerCase();
+  			var nstr="";
 				var i=0;
 				var d=0;
-				while (i<str1.length) {
-					var pos1=str1.indexOf(str2T,i);
+				while (i<strL.length) {
+					var pos1=strL.indexOf(textL,i);
 					if (pos1 >= 0){
-						console.log(pos1);
 						nstr=nstr+str.slice(d,pos1);
-						var pos2=pos1+str2.length;
+						var pos2=pos1+text.length;
 						var str3=str.slice(pos1,pos2);
-						nstr=nstr+ "<b style='color:green;'>"+str3+"</b>";
+						nstr=nstr+ "<span style=\"background-color:yellow\">"+str3+"</span>";
 						i=pos2;
 						d=pos2;
 					}
 				}
-				nstr=nstr+str1.slice(pos2,str1.length);
-				document.getElementById("contentx").innerHTML=nstr;
-		}
+				nstr=nstr+strL.slice(pos2,strL.length);
+				document.getElementById("paragraph").innerHTML=nstr;
+  		}
+		function ResetText() {
+  			document.getElementById('paragraph').innerHTML= strF;
+  			document.getElementById('text').value= null;
+		}		
 	</script>
 </body>
-</html>
+</html> 

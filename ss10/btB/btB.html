@@ -39,10 +39,11 @@
 					<p id="r1">Sign Up</p>
 					<p id="r2">It's free and always will be.</p>
 					<p id="result"></p>
-					<input type="text" name="firstname" placeholder="Firstname" required="" id="firstname" >
-					<input type="text" name="lastname" placeholder="Surname" required="" id="lastname"><br>
-					<input type="text" name="regEmail" placeholder="Mobile number or email address" required="" id="regEmail"><br>
-					<input type="password" name="regPasswd" placeholder="New password" required="" id="regPass">
+					<input type="text" name="firstname" placeholder="Firstname" required="" onclick="checkField('firstname')" onchange="checkField('firstname')" id="firstname" >
+					<input type="text" name="lastname" placeholder="Surname" required="" onchange="checkField('lastname')" onclick="checkField('lastname')" id="lastname"><br>
+					<input type="text" name="regEmail" placeholder="Mobile number or email address" onchange="checkField('regEmail')" onclick="checkField('regEmail')" required="" id="regEmail"><br>
+					<input type="password" name="regPasswd" placeholder="New password" onchange="checkField('regPass')" onclick="checkField('regPass')" required="" id="regPass">
+					<input type="password" name="re_regPasswd" placeholder="Re enter password" onchange="checkField('re_regPass')" onclick="checkField('re_regPass')" required="" id="re_regPass">
 					<p id="r3">Birthday</p>
 					<select name="birthdayDay" id="day" onmouseover="dayOptionCreate()">
 						<option>Day</option>
@@ -66,8 +67,12 @@
 						<option>Year</option>
 					</select>
 					<a id="birthday-help" href="#" title="Click for more information">Why do I need to provide my date of birth?</a><br>
-					<input type="radio" name="gender" value="female" id="female"><label>Female</label>
-					<input type="radio" name="gender" value="male" id="male"><label>Male</label>
+					<div class="gender">
+						<input type="radio" checked="checked" name="gender" value="female" id="female"><label>Female</label>
+					</div>
+					<div class="gender">
+						<input type="radio" name="gender" value="male" id="male"><label>Male</label>
+					</div>
 					<p id="r4">By clicking Create Account, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. You may receive SMS message notifications from Facebook and can opt out at any time.</p>
 					<button type="submit" name="submit" id="btnSubmit" onclick="solve()">Create Account</button>
 				</form>

@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<p id="result"></p>
+	<p id="result" ></p>
 	<button id="7" value="7" onclick="checkbtn('7')">7</button>
 	<button id="8" value="8" onclick="checkbtn('8')">8</button>
 	<button id="9" value="9" onclick="checkbtn('9')">9</button>
@@ -51,12 +51,20 @@
 			document.getElementById("result").innerHTML= eval(str);
 		}
 		function delAll(){
+			str ="";
 			document.getElementById("result").innerHTML= " ";
 		}
 		function del(){
 			str = str.slice(0,str.length-1);
 			document.getElementById("result").innerHTML= str;
 		}
+		// function checkLength(){
+		// 	var length =str.length;
+		// 	if (length >20){
+		// 		strx =str.slice(0,20);
+		// 		document.getElementById("result").innerHTML= strx;
+		// 	}
+		// }
 	</script>
 </body>
 </html>

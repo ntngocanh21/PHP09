@@ -1,6 +1,17 @@
-function changeBoder(id,color) {
-	document.getElementById(id).style.border = "'1px solid "+color+ "';"
-}
+function checkField(id){
+	function changeBorder(id,color){
+		document.getElementById(id).style.border="1px solid "+color;
+	}
+
+	var firstname = document.getElementById(id).value;
+	if(firstname==""){
+		changeBorder(id,"red");
+		return false;
+	}
+	else{
+		document.getElementById(id).style.border="1px solid #bdc7d8";
+	}	
+}	
 function checkEmail() {
     var email = document.getElementById('regEmail');
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -9,17 +20,28 @@ function checkEmail() {
 	    email.focus;
 	    return false;
 	}
- }
-function checkPass(){
-	var pass = document.getElementById('regPass');
-	var filter = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/;
-	if (!filter.test(pass.value)) {
-	    document.getElementById('result').innerHTML = "please enter a valid pass"
-	    pass.focus;
-	    return false;
+	else{
+		document.getElementById('result').innerHTML = null;
 	}
-    return re.test(str);
-}
+ }
+// function checkPass(){
+//     var regpass = document.getElementById('regPass').value;
+//     var reRegPass = document.getElementById("re_regPass").value;
+//     if(regpass != reRegPass){
+// 		document.getElementById("result").innerHTML="Your pass do not match. Please try again";
+// 		return false;
+// 	}
+// 	else{
+// 		document.getElementById("result").innerHTML=null;
+// 		if(regPass.length < 6){
+// 			document.getElementById("result").innerHTML="Passwords must be at least 6 characters";
+// 			return false;
+// 		}
+// 		else{
+// 			document.getElementById("result").innerHTML=null;
+// 			return true;
+// 		}
+// }
 function dayOptionCreate() {
  	select = document.getElementById("day");
   	for (var i = 0; i<=31; i++){
@@ -39,7 +61,7 @@ function yearOptionCreate() {
 
  function solve() {
 	checkEmail();
-	checkPass();
+	// checkPass();
 }
 
 

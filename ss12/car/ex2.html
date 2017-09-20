@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CAR</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+</head>
+<body>
+	<button id="left" style="padding: 20px" >LEFT</button>
+	<button id="right" style="padding: 20px">START</button>
+    <img src="tree.png" alt="tree" id="tree" style="position: absolute; right: 30px; height: 30vh; top: 15vh;">
+    <img src="car.png" alt="car" id="car" style="position: absolute; top: 30vh; width: 200px">
+    <img src="coconut.png" alt="coconut" id="coconut" style="position: absolute; right: 85px; height: 5vh; top: 25vh;">
+    <img src="Fireball.png" alt="collision" id="fireball" style="position: absolute; right: 131px; height: 3vh; top: 39vh; display: none;">
+    <img src="explosion.png" alt="explosion" id="explo" style="position: absolute; right: 119px; height: 6vh; top: 37vh; display: none;">
+	<script> 
+        var fire = $("#fireball");
+        var explo = $("#explo");
+        var coconut= $("#coconut");
+		$(document).ready(function(){
+    		$('#right').click(function(){
+        		$("#car").animate({left: '82%'},1000);
+        		$("#car").css({
+            	"-webkit-transform": "scaleX(1)",
+        		});
+                $("#tree").css({
+                    "-webkit-transition-delay": "0.9s",
+                    "-webkit-transform": "rotate(-30deg)",
+                });
+                $("html").css({
+                    "-webkit-transition-delay": "0.9s",
+                    "background-image": "url('storm.jpg')",
+                    "background-size": "cover",
+                });
+                fire.delay(1000).show(200).hide(200);
+                coconut.delay(1200).animate({top: '40%'},1000);
+                explo.delay(1200)
+                    .show(200)
+                    .animate({
+                        right: '82px',
+                        height: '14vh',
+                        top: '33vh'
+                    },200);
+               
+    		});
+    		$('#left').click(function(){
+                $("#car").css({
+                "-webkit-transform": "scaleX(-1)",
+                });
+                $("#tree").css({
+                    "-webkit-transition-delay": "0s",
+                    "-webkit-transform": "rotate(0)",
+                });
+                $("html").css({
+                     "background-image": "none",
+                });
+        		$("#car").animate({left: '10%'},1000);
+                explo.hide();
+                coconut.animate({top: '24%'},1);
+        	});
+});
+</script> 
+</body>
+</html>

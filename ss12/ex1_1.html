@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</head>
+<body>
+	<p id="text">To day ....</p>
+	<input type="button" name="hide" value="hide" id="hide" onclick="display('hide')">
+	<input type="button" name="show" value="show" id="show" onclick="display('show')">
+	<script type="text/javascript">
+		function display(id) {
+			var value =document.getElementById(id).value;
+			if(value == "hide" )
+			document.getElementById('text').style.display="none";
+			if(value == "show" )
+				document.getElementById('text').style.display="block";
+		}
+	</script>
+</body>
+</html>

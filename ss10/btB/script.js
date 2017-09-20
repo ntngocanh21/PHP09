@@ -25,25 +25,25 @@ function checkEmail() {
 	}
 }
 
-// function checkPass(){
-//     var regpass = document.getElementById('regPass').value;
-//     var reRegPass = document.getElementById("re_regPass").value;
-//     if(regpass != reRegPass){
-// 		document.getElementById("result").innerHTML="Your pass do not match. Please try again";
-// 		return false;
-// 	}
-// 	else{
-// 		document.getElementById("result").innerHTML=null;
-// 		if(regPass.length < 6){
-// 			document.getElementById("result").innerHTML="Passwords must be at least 6 characters";
-// 			return false;
-// 		}
-// 		else{
-// 			document.getElementById("result").innerHTML=null;
-// 			return true;
-// 		}
-// 	}
-// }
+function checkPass(){
+    var regpass = document.getElementById('regPass').value;
+    var reRegPass = document.getElementById('re_regPass').value;
+    if(reRegPass != regpass){
+		document.getElementById("result").innerHTML="Your pass do not match. Please try again";
+		return false;
+	}
+	else{
+		document.getElementById("result").innerHTML=null;
+		if(regPass.length < 6){
+			document.getElementById("result").innerHTML="Passwords must be at least 6 characters";
+			return false;
+		}
+		else{
+			document.getElementById("result").innerHTML=null;
+			return true;
+		}
+	}
+}
 function dayOptionCreate() {
  	select = document.getElementById("day");
   	for (var i = 2; i<=31; i++){
@@ -52,23 +52,31 @@ function dayOptionCreate() {
         select.add(opt);
     }
 }
-function yearOptionCreate() {
- 	select = document.getElementById("year");
-  	for (var i = 1970; i<1999; i++){
-        var opt = document.createElement("option");
-        opt.value = opt.text = i;
-        select.add(opt);
-    }
-    var opt = document.createElement("option");
-        opt.value = opt.text = 1999;
-        opt.selected = "1";
-        select.add(opt);
-    for (var i = 2000; i<=2017; i++){
-        var opt = document.createElement("option");
-        opt.value = opt.text = i;
-        select.add(opt);
-    }
+
+var optionText = "<option>Year</option>";
+var selectedYear = "";
+for (var i =1970; i<=2017; i++){
+	selectedYear = (i==1999)?"selected":"";
+	optionText+= "<option value='"+i+"'"+selectedYear+">"+i+"</option>";
+
 }
+document.getElementById("year").innerHTML = optionText;
+
+// select = document.getElementById("year");
+//   	for (var i = 1970; i<1999; i++){
+//         var opt = document.createElement("option");
+//         opt.value = opt.text = i;
+//         select.add(opt);
+//     }
+//     var opt = document.createElement("option");
+//         opt.value = opt.text = 1999;
+//         opt.selected = "1";
+//         select.add(opt);
+//     for (var i = 2000; i<=2017; i++){
+//         var opt = document.createElement("option");
+//         opt.value = opt.text = i;
+//         select.add(opt);
+//     }
 
  function solve() {
 	checkEmail();
@@ -78,7 +86,7 @@ function yearOptionCreate() {
 	checkField('regPass');
 	checkField('re_regPass');
 	checkEmail();
-	//checkPass();
+	// checkPass();
 }
 
 

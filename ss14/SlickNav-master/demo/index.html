@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+
+<title>SlickNav Demo</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../dist/slicknav.css">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<link href="../jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../jquery.bxslider/jquery.bxslider.js"></script>
+<script src="../dist/jquery.slicknav.js"></script>
+
+</head>
+<body>
+<div class="nav_bar">
+    <ul id="menu">
+        <li><a class="scroll" href="#features">Features</a></li>
+        <li><a class="scroll" href="#usage">Usage Instructions</a></li>
+        <li><a class="scroll" href="#examples">Examples</a></li>
+        <li><a href="http://github.com">View on Github</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <ul class="bxslider">
+        <li><img src="../jquery.bxslider/images/pic1.jpg" /></li>
+        <li><img src="../jquery.bxslider/images/pic2.jpg" /></li>
+        <li><img src="../jquery.bxslider/images/pic3.jpg" /></li>
+    </ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+    $('.bxslider').bxSlider({
+        infiniteLoop: true,
+        hideControlOnEnd: true
+    });
+});
+</script>
+</body>
+</html>

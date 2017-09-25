@@ -1,0 +1,9 @@
+.row{
+	margin-bottom: 10px;
+	border-collapse: separate;
+	text-align: center;
+}
+.row div{
+	background-color: lavender;
+	border: 1px solid #cdcdf8;
+}

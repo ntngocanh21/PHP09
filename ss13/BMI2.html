@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 10vh">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-5 col-md-4">
+                <form action="nothing">
+                    <div class="row" style="height: 50px">
+                        <label for="name" class="col-md-4">Name</label>
+                        <input type="text" id="txtName" data-toggle="popover" data-content="Please type your name!" class="col-md-4">
+                    </div>
+                    <div class="row" style="height: 50px">
+                        <label for="height" class="col-md-4">Height (m)</label>
+                        <input type="number" id="height" step=0.01 min="0.30" max="2.50" data-toggle="popover" data-content="Type your height here!" class="col-md-4">
+                    </div>
+                    <div class="row" style="height: 50px">
+                        <label for="weight" class="col-md-4">Weight (kg)</label>
+                        <input type="number" id="weight" step=0.01 min="3" max="300.00" data-toggle="popover" data-content="Type your weight here!" class="col-md-4">
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <b id="result" class="text-center well col-md-12"></b>
+                <img src="noimages.png" alt="body" id="profile" class="col-md-12">
+            </div>
+            <div class="col-sm-1 col-md-2"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var name = $("#txtName");
+            var height = $("#height");
+            var weight = $("#weight");
+            var result = $("#result");
+            var profile = $("#profile");
+            name.change(function(){
+                if(name.val()){
+                    name.popover('hide');
+                    checkBMI();
+                }else{
+                    name.popover('show');
+                }
+            });
+            height.change(function(){
+                if(height.val()){
+                    height.popover('hide');
+                    checkBMI();
+                }else{
+                   
+                    height.popover('show');
+                }
+            });
+            weight.change(function(){
+                if(weight.val()){                   
+                    checkBMI();
+                }else{
+                    weight.popover('show');
+                }
+            });
+            function    checkBMI(){
+                if(name.val() && weight.val() && height.val()){
+                    var myH = parseFloat(height.val());
+                    var myW = parseFloat(weight.val());
+                    var myResult = (myW / (myH * myH)).toFixed(2);
+                    if(myResult >= 25){
+                        result.text(name.val()+ "'s BMI is" + myResult + ": Fat");
+                        profile.attr('src','fat.png');
+                    }else{
+                        if(myResult < 18.5){
+                            result.text(name.val()+ "'s BMI is" + myResult + ": Skinny");
+                            profile.attr('src','skinny.png');   
+                        }else{
+                            result.text(name.val()+ "'s BMI is " + myResult + ": Normal");
+                            profile.attr('src','normal.png');
+                        }
+                    }
+                }
+                
+            }
+        })
+    </script>
+</body>
+</html>

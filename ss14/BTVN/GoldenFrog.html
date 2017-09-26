@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	<div class="pan">
-		<div class="container" style="height: 785px">
+		<div class="container">
 			<div class="col-md-5"></div>
 			<div class="col-md-6">
 				<p class="title1">CUNG CẤP HƯƠNG LIỆU</p>
@@ -72,11 +72,11 @@
 			    </div>
 			    <div class="col-md-2 numberPages">0<span id="number">1</span>/05</div>
 			    <div class="button col-md-10">
-			    	<a href="#myCarousel" data-slide="prev" id="prev">
-				      	<img src="images/left.png">
+			    	<a href="#myCarousel" data-slide="prev">
+				      	<img src="images/left.png" data-src="images/left.png" data-hover="images/lefthover.png" alt="" class="buttonPages" ">
 				    </a>
 				    <a href="#myCarousel" data-slide="next" id="next">
-				      	<img src="images/right.png">
+				      	<img src="images/right.png" data-src="images/right.png" data-hover="images/righthover.png" alt="" class="buttonPages">
 				    </a>
 			    </div>
 			    
@@ -96,7 +96,7 @@
 				</ul>
 			 	<div class="tab-content">
 				    <div id="home" class="tab-pane fade in active">
-				      	<div id="myCarouselHome" class="carousel slide" data-ride="carousel" ">
+				      	<div id="myCarouselHome" class="carousel slide" data-ride="carousel" >
 						    <div class="carousel-inner">
 							    <div class="item active">
 							    	<div class="col-md-4">
@@ -165,10 +165,10 @@
 					    	</div>
 						    <div class="buttonProducts">
 						    	<a href="#myCarouselHome" data-slide="prev">
-							      	<img src="images/back.png">
+							      	<img src="images/back.png" data-src="images/back.png" data-hover="images/backhover.png" alt="" class="buttonPages" ">
 							    </a>
 							    <a href="#myCarouselHome" data-slide="next">
-							      	<img src="images/go.png">
+							      	<img src="images/go.png" data-src="images/go.png" data-hover="images/gohover.png" alt="" class="buttonPages" ">
 							    </a>
 						    </div>
 	  					</div>
@@ -243,10 +243,10 @@
 					    	</div>
 						    	<div class="buttonProducts">
 								    <a href="#myCarouselMenu1" data-slide="prev">
-								      	<img src="images/back.png">
+								      	<img src="images/back.png" data-src="images/back.png" data-hover="images/backhover.png" alt="" class="buttonPages" ">
 								    </a>
 								    <a href="#myCarouselMenu1" data-slide="next">
-								      	<img src="images/go.png">
+								      	<img src="images/go.png" data-src="images/go.png" data-hover="images/gohover.png" alt="" class="buttonPages" ">
 							    	</a>
 							    </div>
 	  					</div>
@@ -321,10 +321,10 @@
 					    	</div>
 					    	<div class="buttonProducts">
 							    <a href="#myCarouselMenu2" data-slide="prev">
-							      	<img src="images/back.png">
+							      	<img src="images/back.png" data-src="images/back.png" data-hover="images/backhover.png" alt="" class="buttonPages" ">
 							    </a>
 							    <a href="#myCarouselMenu2" data-slide="next">
-							      	<img src="images/go.png">
+							      	<img src="images/go.png" data-src="images/go.png" data-hover="images/gohover.png" alt="" class="buttonPages" ">
 							    </a>
 							</div>
 	  					</div>
@@ -399,10 +399,10 @@
 					    	</div>
 					    	<div class="buttonProducts">
 							    <a href="#myCarouselMenu3" data-slide="prev">
-							      	<img src="images/back.png">
+							      	<img src="images/back.png" data-src="images/back.png" data-hover="images/backhover.png" alt="" class="buttonPages" ">
 							    </a>
 							    <a href="#myCarouselMenu3" data-slide="next">
-							      	<img src="images/go.png">
+							      	<img src="images/go.png" data-src="images/go.png" data-hover="images/gohover.png" alt="" class="buttonPages" ">
 							    </a>
 							</div>
 	  					</div>
@@ -477,10 +477,10 @@
 					    	</div>
 					    	<div class="buttonProducts">
 							    <a href="#myCarouselMenu4" data-slide="prev">
-							      	<img src="images/back.png">
+							      	<img src="images/back.png" data-src="images/back.png" data-hover="images/backhover.png" alt="" class="buttonPages" ">
 							    </a>
 							    <a href="#myCarouselMenu4" data-slide="next">
-							      	<img src="images/go.png">
+							      	<img src="images/go.png" data-src="images/go.png" data-hover="images/gohover.png" alt="" class="buttonPages" ">
 							    </a>
 							</div>
 	  					</div>
@@ -532,37 +532,37 @@
 				</div>
 				<button>XEM THÊM</button>
 			</div>	
-			<div>
+			<div class="contact">
 				<h2>__LIÊN LẠC VỚI CHÚNG TÔI</h2>
 				<div class="row">
 					<div class="col-md-2"></div>
 					<div class="col-md-4">
-						<input type="text" name="">
+						<input type="text" name="name" placeholder="Họ và tên">
 					</div>
 					<div class="col-md-4">
-						<input type="text" name="">
+						<input type="text" name="phone" placeholder="Số điện thoại">
 					</div>
 					<div class="col-md-2"></div>
 				</div>
 				<div class="row">
 					<div class="col-md-2"></div>
 					<div class="col-md-8">
-						<input type="text" name="">
+						<input type="text" name="email" placeholder="Email">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-2"></div>
 					<div class="col-md-8">
-						<input type="text" name="">
+						<textarea row="4" name="decr" placeholder="Nội dung liên lạc"></textarea>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-2"></div>
 					<div class="col-md-4">
-						<input type="text" name="">
+						<input type="text" name="capcha" placeholder="Capcha">
 					</div>
 					<div class="col-md-4">
-						<input type="button" name="" value="PHCAP">
+						<p>PHCAP</p>
 					</div>
 				</div>
 				<div>
@@ -582,10 +582,14 @@
 					<p><strong>VĂN PHÒNG CHÍNH (NHÀ MÁY)</strong></p>
 					<p class="underline">_____</p>
 					<p>Số 31 Đường số 8, KCN Vietnam Singapore (VSIP), Thuận An, Bình Dương, Việt Nam</p>
-					<p>ĐT: (+84) 274 3769 036/ 037/ 038/ 039/ 040</p>
-					<p>Fax: (+84) 274 3769041/ 3769052</p>
-					<p>Email: <a href="">info@goldenfrog.com.vn</a> </p>
-					<p>Website: <a href="">www.goldenfrog.com.vn</a></p>
+					<div class="numberContact">
+						<p>ĐT: (+84) 274 3769 036/ 037/ 038/ 039/ 040</p>
+						<p>Fax: (+84) 274 3769041/ 3769052</p>
+					</div>
+					<div class="link">
+						<p>Email: <a href="">info@goldenfrog.com.vn</a> </p>
+						<p>Website: <a href="">www.goldenfrog.com.vn</a></p>
+					</div>
 				</div>
 				<div class="col-md-4">
 					<p><strong>NHÀ MÁY CHIẾT XUẤT TINH DẦU</strong></p>

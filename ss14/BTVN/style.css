@@ -11,6 +11,9 @@
 .panel{
 	margin-top: 0.7%;
 }
+.pan .container{
+	height: 785px;
+}
 .panel .container .col-md-9{
 	padding: 0px;
 	font-weight: bold;
@@ -33,7 +36,8 @@
 .title1{
 	padding: 25px;
 	font-size: 30px;
-	background-color: #3B9A34;
+
+	background: -webkit-linear-gradient(left,#3d900a,#62b05d);
 	color: white;
 	margin-top: 150px;
 	text-align: right;
@@ -53,7 +57,6 @@
 .carousel-inner{
 	font-weight: bold;
 	height: 150px;
-
 }
 .carousel a{
 	text-decoration: none;
@@ -82,6 +85,7 @@
 	padding: 0px;
 	color: #9d9b97;
 }
+
 .glyphicon{
 	color: green;
 }
@@ -203,6 +207,32 @@ button{
 }
 .footer .col-md-4 .underline{
 
-	margin-top: -4%;
+	margin-top: -9%;
 }
-
+.footer p{
+	margin-bottom: 30px;
+}
+.numberContact,.phone p{
+	height: 10px;
+}
+.contact input,textarea,p{
+	margin: 10px 0;
+}
+.contact textarea{
+	height: 110px;
+}
+.contact input,textarea{
+	border: 1px solid #d6d6d6;
+	width: 100%;
+	height: 42px;
+	padding: 5px;
+}
+.contact p{
+	color: white;
+	background-color: #4b8c1a;
+	width: 120px;
+	text-align: center;
+	font-size: 150%;
+	height: 42px;
+	padding-top: 7px;
+}

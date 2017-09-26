@@ -18,4 +18,12 @@ $(document).ready(function(){
         };
     $("#number").text(b);
     });
+    $(".buttonPages").mouseover(function () {
+        $(this).attr('src', $(this).data("hover"));
+    }).mouseout(function () {
+        $(this).attr('src', $(this).data("src"));
+    });
+    $('.carousel').carousel({
+        interval: false
+    });
 });
